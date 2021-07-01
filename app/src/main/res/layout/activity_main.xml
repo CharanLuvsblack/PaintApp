@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <com.app.primitives.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawingView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Rect"
+        android:id="@+id/btnRect"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnRect"
+        android:layout_toLeftOf="@id/btnRect"
+        android:layout_margin="16dp"
+        android:text="Line"
+        android:id="@+id/btnLine"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnRect"
+        android:layout_toRightOf="@id/btnRect"
+        android:layout_margin="16dp"
+        android:text="Circle"
+        android:id="@+id/btnCircle"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRect"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Square"
+        android:id="@+id/btnSquare"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignBaseline="@id/btnSquare"
+        android:layout_toLeftOf="@id/btnSquare"
+        android:text="Pencil"
+        android:id="@+id/btnPencil"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btnSquare"
+        android:layout_toRightOf="@id/btnSquare"
+        android:layout_margin="16dp"
+        android:text="ERASER"
+        android:id="@+id/btnClear"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSquare"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:text="Choose Color"
+        android:id="@+id/btnColor"/>
+
+
+
+</RelativeLayout>
